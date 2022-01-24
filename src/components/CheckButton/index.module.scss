@@ -1,0 +1,48 @@
+.checkButton {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 13px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+    border: 1px solid #d9d9d9;
+   &.active {
+        border-color:#3089dc;
+        color: #3089dc;
+        &::before {
+            content: " ";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 10px solid;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            border-color: transparent #3089dc #3089dc transparent;
+        }
+        &::after {
+            content: " ";
+            width: 10px;
+            height: 6px;
+            position: absolute;
+            bottom: 4px;
+            right: 1px;
+            border: 2px solid #fff;
+            margin: 0;
+            padding: 0;
+            border-top: 0;
+            z-index: 1;
+            border-right: 0;
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+   }
+
+}

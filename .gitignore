@@ -1,0 +1,17 @@
+
+# dependencies
+/node_modules
+/.idea
+
+# production
+/dist
+/publish
+/temp
+
+# misc
+.DS_Store
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+APP-ENV.d.ts

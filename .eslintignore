@@ -1,0 +1,11 @@
+
+# ignore
+/node_modules
+**/*.css
+**/*.html
+/public
+/dist
+/config/
+
+react-app-env.d.ts
+APP-ENV.d.ts

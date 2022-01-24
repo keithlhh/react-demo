@@ -1,0 +1,32 @@
+.logo {
+    height: 64px;
+    line-height: 64px;
+    transition: all .3s;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+.sider {
+    min-height: 100vh;
+    height: 100vh;
+    box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+    position: relative;
+    z-index: 10;
+    :global {
+        .ant-menu-dark,
+        .ant-menu-dark .ant-menu-sub {
+          color: rgba(255, 255, 255, 0.65);
+          background: #062d5b;
+        }
+        .ant-menu.ant-menu-dark .ant-menu-item-selected,
+        .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+          background-color: #2290fe;
+          color: #ffffff;
+        }
+        .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+          background: #05264d;
+          box-shadow: none;
+        }
+      }
+}

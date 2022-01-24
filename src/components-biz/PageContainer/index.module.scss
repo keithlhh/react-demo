@@ -1,0 +1,18 @@
+.container {
+    .subTitleContainer {
+        display: flex;
+
+    }
+    :global {
+        .ant-breadcrumb .ant-breadcrumb-link {
+            color: rgba(0, 0, 0, 0.45)
+        }
+        .ant-breadcrumb :first-child {
+            .ant-breadcrumb-link {
+                font-size: 18px;
+                font-weight: 500;
+                color: rgba(0,0,0,0.85)
+            }
+        }
+    }
+}
