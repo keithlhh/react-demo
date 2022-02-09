@@ -8,7 +8,7 @@ export interface BasicLayoutProps {}
 const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
 	const layout = (
 		<Layout>
-			<SiderMenu />
+			{/* <SiderMenu /> */}
 			<Layout>
 				<Content
 					id="main"
