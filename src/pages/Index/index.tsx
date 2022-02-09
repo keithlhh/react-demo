@@ -1,4 +1,5 @@
 import React from "react";
+import UseImperativeHandlePage from "./useImperativeHandlePage";
 import UseMemoPage from "./useMemoPage";
 import UseRefPage from "./useRefPage";
 
@@ -7,7 +8,8 @@ const HomePage = () => {
 		<>
 			<div>home</div>
 			{/* <UseMemoPage /> */}
-			<UseRefPage />
+			{/* <UseRefPage /> */}
+			<UseImperativeHandlePage />
 		</>
 	);
 };
