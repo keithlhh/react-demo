@@ -2,6 +2,7 @@ import React from "react";
 import UseCustomHooks from "./customHooks";
 import UseImperativeHandlePage from "./useImperativeHandlePage";
 import UseMemoPage from "./useMemoPage";
+import UseReducerPage from "./useReducerPage";
 import UseRefPage from "./useRefPage";
 
 const HomePage = () => {
@@ -11,7 +12,8 @@ const HomePage = () => {
 			{/* <UseMemoPage /> */}
 			{/* <UseRefPage /> */}
 			{/* <UseImperativeHandlePage /> */}
-			<UseCustomHooks />
+			{/* <UseCustomHooks /> */}
+			<UseReducerPage />
 		</>
 	);
 };
