@@ -6,6 +6,7 @@ const useMemoPage = () => {
 		console.log('memoChange: ', a);
 		return a;
 	}, [a]);
+
 	return (
 		<>
 			<div>useMemoPage {a}</div>

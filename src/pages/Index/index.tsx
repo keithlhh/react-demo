@@ -1,5 +1,6 @@
 import React from "react";
 import UseCustomHooks from "./customHooks";
+import UseCallbackPage from "./useCallbackPage";
 import UseImperativeHandlePage from "./useImperativeHandlePage";
 import UseMemoPage from "./useMemoPage";
 import UseReducerPage from "./useReducerPage";
@@ -13,7 +14,8 @@ const HomePage = () => {
 			{/* <UseRefPage /> */}
 			{/* <UseImperativeHandlePage /> */}
 			{/* <UseCustomHooks /> */}
-			<UseReducerPage />
+			{/* <UseReducerPage /> */}
+			<UseCallbackPage />
 		</>
 	);
 };
