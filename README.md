@@ -1,4 +1,4 @@
-## superboss-model-web
+## web
 
 ##### node环境：
 	>12
