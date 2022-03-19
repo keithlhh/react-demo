@@ -20,6 +20,6 @@ module.exports = {
 	// 自定义别名
 	appPublicUrl: {
 		"@": resolveApp("src"),
-		"@raycloud/sass": resolveApp('node_modules/@raycloud/sass/index.min.css')
+		// "@raycloud/sass": resolveApp('node_modules/@raycloud/sass/index.min.css')
 	},
 };
