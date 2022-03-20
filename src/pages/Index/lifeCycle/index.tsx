@@ -39,10 +39,11 @@ class LifeCycle extends React.Component<any, any, any> {
 	 * 默认行为是 state 每次发生变化组件都会重新渲染。大部分情况下，你应该遵循默认行为。
 	 * 当 props 或 state 发生变化时，shouldComponentUpdate() 会在渲染执行之前被调用。
 	 * 返回值默认为 true。首次渲染或使用 forceUpdate() 时不会调用该方法。
+	 * PureComponent 会对 props 和 state 进行浅层比较，并减少了跳过必要更新的可能性。
 	 * @returns 
 	 */
 
-	shouldComponentUpdate() {
+	shouldComponentUpdate(nextProps: any, nextState: any) {
 		console.log('shoundComponentUpdate');
 		return true;
 	}

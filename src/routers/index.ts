@@ -1,6 +1,7 @@
 import { RouteType } from '@/types/schemas/index';
 import HomePage from '@/pages/Index/index';
 import LifeCyclePage from '@/pages/Index/lifeCycle';
+import ContextPage from '@/pages/Index/contextPage';
 
 const indexRoutes: RouteType[] = [
 	{
@@ -12,6 +13,11 @@ const indexRoutes: RouteType[] = [
 		path: "/lifeCycle",
 		exact: true,
 		component: LifeCyclePage,
+	},
+	{
+		path: "/context",
+		exact: true,
+		component: ContextPage,
 	}
 ];
 
