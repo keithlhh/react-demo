@@ -7,11 +7,6 @@ import { ItemGetItemCatsResponse } from '@/types/schemas/productManage';
 type DataProps = ItemGetItemCatsResponse['data'];
 // 工具库
 
-// 呼起旺旺
-export const callWangwang = (wangwang: string) => {
-	window.open(`https://www.taobao.com/go/market/webww/ww.php?spm=a1z13.2196529.0.0.59705acaxRXO7S
-	&ver=3&touid=${wangwang}&siteid=cntaobao&status=1&charset=utf-8`);
-};
 
 // 序列化
 export const serialization = (keyMap: any) => {
@@ -123,35 +118,4 @@ export const formatEmptyField: <T extends {} = string>(param: T) => T | string =
  */
 export const useQuery = (search: string) => {
 	return qs.parse(search.substring(1));
-};
-
-
-/**
- * @param price 待处理的价格
- */
-export const toFixFen = (price: number | number) => {
-	let result = String(price).split(".");
-	let r1 = result[0];
-	let r2 = result[1] || "";
-
-	if (r1 == '0' && r2.substr(0, 1) == '0') {
-		return r2.length ? "0." + r2.substr(0, 2) : '0';
-	} else {
-		return r2.length ? r1 + "." + r2.substr(0, 1) : r1;
-	}
-};
-
-/**
- * @param price 待处理的价格
- */
-export const toFixALLFen = (price: string | number) => {
-	let result = String(price).split(".");
-	let r1 = result[0];
-	let r2 = result[1] || "";
-
-	if (r1 == '0') {
-		return "0." + r2.substr(0, 2);
-	} else {
-		return r1;
-	}
 };
