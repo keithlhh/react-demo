@@ -2,7 +2,7 @@
 	"name": "web",
 	"version": "1.0.0",
 	"license": "ISC",
-	"description": "superboss model web",
+	"description": "web demo",
 	"author": "",
 	"keywords": [],
 	"scripts": {
@@ -91,6 +91,7 @@
 		"@types/react-dom": "^17.0.9",
 		"@types/react-router-config": "^5.0.1",
 		"@types/react-router-dom": "^5.1.5",
+		"@yishui.lhh/loader-demo": "^1.0.0",
 		"ahooks": "^2.10.9",
 		"antd": "^4.16.11",
 		"axios": "^0.20.0",

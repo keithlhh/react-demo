@@ -111,6 +111,16 @@ module.exports = {
 								},
 							},
 							"sass-loader",
+							{
+								loader: path.resolve('./config/loaders/demo.js'),
+								options: {}
+							},
+							{
+								loader: path.resolve('./config/loaders/demo.js'),
+								options: {
+									aaa: '1334'
+								}
+							},
 						]
 					}
 				],
