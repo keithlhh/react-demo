@@ -17,6 +17,6 @@
 ##### 正式环境打包
 `npm run build-prod`
 
-## 开发规范
+## 开发规范1
 
 	请仔细阅读docs/STANDARD.md 文件
